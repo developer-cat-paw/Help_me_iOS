@@ -243,7 +243,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="SignUp:" destination="MFo-YM-j6w" eventType="touchUpInside" id="U7F-4Y-wr7"/>
-                                    <action selector="didTabLogIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vQB-Wl-fb2"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  아이디를 입력해주세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nl4-5u-Q8R">
@@ -291,9 +290,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="emailTextField" destination="I01-iO-Cb5" id="3Tc-zZ-lI3"/>
-                        <outlet property="pwChackTextField" destination="wBD-97-mIk" id="7A2-aW-PPJ"/>
-                        <outlet property="pwTextField" destination="wBD-97-mIk" id="EHv-Ft-YsN"/>
+                        <outlet property="emailTextField" destination="Nl4-5u-Q8R" id="pL0-rv-b6F"/>
+                        <outlet property="pwChackTextField" destination="wBD-97-mIk" id="UVN-Iv-SMi"/>
+                        <outlet property="pwTextField" destination="I01-iO-Cb5" id="re2-zk-chN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Og8-Oa-8Ni" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
