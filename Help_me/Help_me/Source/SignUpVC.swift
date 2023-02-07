@@ -42,7 +42,7 @@ class SignUpVC: UIViewController {
         else {
             let errorAlert = UIAlertController(
                 title: "🚫회원가입 실패🚫",
-                mesçsage: "비밀번호를 확인해주세요!",
+                message: "비밀번호를 확인해주세요!",
                 preferredStyle: .alert)
             errorAlert.addAction(UIAlertAction(title: "확인", style: .default))
             self.present(errorAlert, animated: true, completion: nil)
