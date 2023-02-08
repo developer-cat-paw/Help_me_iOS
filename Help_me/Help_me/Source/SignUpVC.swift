@@ -15,9 +15,9 @@ class SignUpVC: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var pwTextField: UITextField!
     @IBOutlet weak var pwChackTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupNavigationBar()
         passwordSecurety()
     }
     
@@ -53,10 +53,5 @@ class SignUpVC: UIViewController {
         pwTextField.isSecureTextEntry = true
         pwChackTextField.isSecureTextEntry = true
     }
-    private func setupNavigationBar() {
-        let navigationBarAppearance = UINavigationBarAppearance()
-        navigationBarAppearance.backgroundColor = UIColor(red: 255.0/255, green:202.0/255, blue:40.0/255, alpha: 1)
-        navigationController?.navigationBar.standardAppearance = navigationBarAppearance
-        navigationController?.navigationBar.scrollEdgeAppearance = navigationBarAppearance
+    
     }
-}
