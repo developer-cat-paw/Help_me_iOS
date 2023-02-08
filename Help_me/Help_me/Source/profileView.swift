@@ -6,6 +6,10 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseCore
+import FirebaseDatabase
 class profileVC: UIViewController {
     let imagePicker = UIImagePickerController()
     override func viewDidLoad() {
@@ -14,7 +18,18 @@ class profileVC: UIViewController {
         self.imagePicker.allowsEditing = true // 수정 가능 여부
         self.imagePicker.delegate = self // picker delegate
     }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
     
+    @IBAction func LogOut(_ sender: Any) {
+        do {
+                   try Auth.auth().signOut()
+                 } catch let signOutError as NSError {
+                   print ("Error signing out: %@", signOutError)
+                 }
+        self.dismiss(animated: true)
+    }
     @IBOutlet weak var profileImageView: UIImageView!
     
     @IBAction func DidTabEditButton(_ sender: Any) {

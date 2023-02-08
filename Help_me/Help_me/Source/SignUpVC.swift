@@ -20,6 +20,9 @@ class SignUpVC: UIViewController {
         super.viewDidLoad()
         passwordSecurety()
     }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
     
     
     @IBAction func SignUp(_ sender: Any) {
